@@ -1,7 +1,7 @@
 [build]
     base = "SAM-PORTFOLIO-1/"
     publish = "SAM-PORTFOLIO-1/dist"
-    command = "npm run build"
+    command = "yarn run build"
 
 [redirects]
 from = "/*"
