@@ -1,0 +1,9 @@
+[build]
+    base = "SAM-PORTFOLIO-1/"
+    publish = "SAM-PORTFOLIO-1/dist"
+    command = "npm run build"
+
+[redirects]
+from = "/*"
+to = "/index2.html"
+status = 200
