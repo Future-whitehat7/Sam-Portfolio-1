@@ -1,9 +1,9 @@
 [build]
-    base = "SAM-PORTFOLIO-1/"
-    publish = "SAM-PORTFOLIO-1/dist"
-    command = "yarn run build"
+    base = "/Users/warrior_call/Desktop/Sam-Portfolio-1/"
+    command = "npm run build"
+    publish = "dist"
 
-[redirects]
-from = "/*"
-to = "/index2.html"
-status = 200
+# [[redirects]]
+# from = "/"
+# to = "/index2.html"
+# status = 200
