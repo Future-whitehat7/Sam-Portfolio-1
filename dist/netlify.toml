@@ -1,9 +1,8 @@
 [build]
-    base = "/Users/warrior_call/Desktop/Sam-Portfolio-1/"
-    command = "npm run build"
+    command = "yarn build"
     publish = "dist"
 
 # [[redirects]]
-# from = "/"
+# fr
 # to = "/index2.html"
 # status = 200

@@ -1,0 +1,542 @@
+/* Global  */
+
+/* the root colors */
+:root {
+    --primary-color: #333;
+    --secondary-color: #444;
+    --overlay-color: rgba(0, 0, 0, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+    /* outline: 0; */
+    box-sizing: border-box;
+    /* font-size: 100%; */
+    /* vertical-align: baseline; */
+}
+html {
+    font-family: proxima nova, sans-serif;
+}
+body {
+    /* width: 100%; */
+     /* background-image: url(/dist/img/apple-icon.png); */
+     background-position: top center;
+     background-repeat: no-repeat;
+     /* background-size: cover; */
+     font-family: 'Catamaran', sans-serif;
+     line-height: 1.6;
+     color: #333;
+     /* font-size: 1.1rem; */
+}
+
+/* .wrapper {
+    max-width: 1100px;
+    margin: auto; 
+    overflow: hidden;
+    padding: 0 2rem;
+
+} */
+
+
+h1, 
+h2{
+    color: gold;
+    font-size: 1.1rem; 
+    line-height: 1.3;
+}
+p {
+    color: #333;
+    font-size: 25px;
+}
+ul {
+    list-style: none;
+    margin-top: 32px;
+}
+li {
+     list-style: none;
+     font-size: 24px;
+     margin-bottom: 20px;
+}
+
+
+/* nav  */
+.container {
+    max-width: 1100px;
+    margin: auto; 
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+/* .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    font-size: 2rem;
+} */
+
+.navbar {
+    height: 100px; 
+    line-height: 100px;
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+.navbar .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.navbar .nav{
+    justify-self: flex-end; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.navbar .nav a {
+    color: rgb(74, 167, 255);
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+.navbar .nav a:hover {
+    color: gold;
+}
+.navbar .logo {
+    font-size: 2rem;
+}
+/* nav a img {
+    vertical-align: middle;
+} */
+/* nav a:nth-child(2) {
+    float: right;
+} */
+
+
+/* Header- renamed it to div and added a container  */
+.section-a {
+    margin: 2rem 0; 
+}
+.section-a .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.section-a h1{
+    font-size: 4rem;
+    color: rgb(74, 116, 255);
+}
+
+.section-a p{
+    margin: 1rem 0;
+}
+
+/* utilities  */
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 30px;
+}
+.btn:hover {
+    /* background: var(--secondary-color); */
+    background: rgb(241, 183, 37);
+}
+
+
+/* header {
+    margin: 100px 0 200px 0;
+    text-align: center;
+}
+header p {
+    width: 45%;
+    margin: 30px auto 0 auto;
+}
+header a {
+    text-decoration: none;
+} */
+/* Work  */
+/* .work {
+    text-align: center;
+    width: 100%;
+} */
+
+/* for every image. new code line */
+
+/* section B */
+
+.section-b {
+    position: relative;
+    background: url('/dist/img/work001-04.jpg') 
+    no-repeat bottom center/cover; 
+    height: 600px;
+}
+
+/* section B */
+/* .section-b-inner  {
+    color: white;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   margin: auto;
+   max-width: 860px;
+   padding: 5rem 0;
+} */
+/* 
+.section-b-inner h3  {
+    font-size: 2rem;
+} */
+
+/* .section-b-inner h2  {
+    font-size: 5rem;
+    margin-top: 1rem; 
+} */
+
+/* .section-b-inner p {
+    margin-top: 1rem; 
+    font-size: 1.5rem;
+} */
+/* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay-color);    
+} */
+
+/* section b, new code */
+
+img {
+    width: 100%;
+}
+ 
+ .work {
+    display: grid;
+    grid-gap: 20px;
+     /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    /* width: 100%;  */
+
+} 
+.work h2 {
+    text-align: center;
+    font-size: 3rem;
+    position: relative;
+    /* margin: 100px 0 200px 0; */
+
+    /* margin-top: 1rem;  */
+    /* width: 100%; */
+}
+
+/* .work .zone {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 2fr;
+    flex-wrap: wrap;
+    width: 100%;
+} */
+
+.zone {
+        cursor:pointer;
+        /* display:inline-block; */
+        /* text-align: center; */
+        /* font-size:10em; */
+        border-radius:4px;
+        border:1px solid #bbb;
+        transition: all 0.3s linear;
+}
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+
+/* Work2  */
+.work2 {
+    width: 100%;
+    text-align: center;
+}
+.work2 a img {
+    margin: 1%;
+    width: 40%;
+}
+
+/* whatIDo  */
+.whatIDO {
+    text-align: center;
+    margin: 100px 0 200px 0;
+    position: relative;
+}
+.whatIDO h1 {
+    color: rgb(19, 179, 253);
+    text-align: center;
+    position: relative;
+}
+.iAm {
+    color: #25272C;
+    font-size: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    top: -20px;
+    z-index: -1;
+}
+
+/* Footer  */
+footer {
+    text-align: center; 
+    margin: 60px 0;
+}
+footer p {
+    color: goldenrod; 
+}
+
+/* ----------------- Responsive/ Media Query --------------------------- */
+
+@media only screen and (max-width: 991px) {
+
+    body {  
+        width: 90%;
+        margin: 0 auto;
+    }
+/* 
+    .wrapper {
+        width: 50%;
+        margin: 0 auto; 
+    } */
+    /* .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    } */
+    /* h1{
+        color: gold;
+        font-size: 25px; 
+    } */
+/* 
+    p {
+        color: black;
+        font-size: 25px;
+    } */ 
+
+    ul {
+        list-style: none;
+        margin-top: 20px;
+    }
+    li {
+         list-style: none;
+         font-size: 20px;
+         margin-bottom: 20px;
+    }
+    
+    
+    /* nav  */
+    nav {
+        height: 100px; 
+        line-height: 100px;
+    }
+    nav a {
+        color: gold;
+        text-decoration: none;
+    }
+    
+    /* nav a img {
+        vertical-align: right;
+    } */
+    nav a:nth-child(2) {
+        float: right;
+    }
+    
+
+    /* Header  */
+    header {
+    margin: 40px auto 90px auto;
+    text-align: center;
+    }
+    header p {
+    width: 95%;
+    margin: 30px auto 100px auto;
+    /* width: 100%; */
+    /* margin: 30px auto 100px auto; */
+    /* text-align: left; */
+    }
+    header a {
+    color: rgb(74, 167, 255);
+    text-decoration: none;
+    }
+
+    /* Work  */
+    .work .zone {
+        /* text-align: center; */
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-gap: 20px;
+        /* grid-template-columns: repeat(auto-fill, minmax(200px, 3fr)); */
+        grid-template-rows: 1fr;
+
+    }
+
+     .work .zone img {
+         width: 120%;
+         margin: auto;
+     }
+
+     .work2 a img {
+        width: 120%;
+        margin: 30px auto 0 auto;
+    }
+
+    .whatIDO {
+        text-align: center;
+        width: 96%;
+        margin: 50px 0 50px 0;
+        position: relative;
+    }
+  
+    .whatIDO h1 {
+        color: goldenrod;
+        text-align: center;
+        position: relative;
+    }
+     .iAm {
+        color: #25272C;
+        font-size: 100px;
+        position: absolute;
+        left: 59%;
+        transform: translate(-50%);
+        -webkit-transform: translate(-50%);
+        top: -20px;
+        z-index: -1;
+        visibility: visible;
+    }   
+
+   /* Footer  */
+footer {
+    text-align: center; 
+    margin: 60px 0;
+}
+footer p {
+    color: goldenrod; 
+    font-size: 1.2em;
+    }
+}
+
+
+/* ----------------- Responsive/ Media Query- max-width: 768px --------------------------- */
+
+@media only screen and (max-width: 768px) {
+
+    /* body */
+    body {  
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .wrapper {
+        width: 50%;
+        margin: 0 auto; 
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    h1{
+        color: gold;
+        font-size: 25px; 
+        /* display: flex; */
+        /* text-align: center; */
+        /* flex-direction: column; */
+    }
+
+    p {
+        display: inline;
+        color: black;
+        font-size: 20px;
+    }
+    ul {
+        list-style: none;
+        margin-top: 30px;
+    }
+    li {
+         list-style: none;
+         font-size: 20px;
+         margin-bottom: 20px;
+    }
+
+    header  {
+        width: 96%;
+        margin: 30px auto 100px auto;
+        text-align: center;
+    }
+
+    /* Work  */
+    .work .zone {
+         /* text-align: center; */
+         width: 120%; 
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+     /* .work a img {
+         width: 47%;
+         margin: 30px auto 0 auto;
+     } */
+     .work2 a img {
+        width: 120%;
+        margin: 30px auto 0 auto;
+    }
+
+
+    .whatIDO {
+        text-align: center;
+        width: 96%;
+        margin: 30px auto 30px auto;
+    }
+    .whatIDO h1 {
+        color: goldenrod;
+        text-align: center;
+        position: relative;
+    }
+    .iAm {
+        color: #25272C;
+        font-size: 100px;
+        position: relative;
+        left: 60%;
+        transform: translate(-20%);
+        -webkit-transform: translate(-50%);
+        top: -20px;
+        z-index: -1;
+        visibility: visible;
+    }
+
+   /* footer */
+   footer {
+    text-align: center;
+    margin: 20px auto;
+    }
+    footer p {
+        color: goldenrod; 
+        font-size: 1.2em;
+
+    }
+
+}

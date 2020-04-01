@@ -3,95 +3,363 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio Website</title>
+    <title>Portfolio website-1.1</title>
+    <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+
+        <!-- taiwind cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/tailwind.min.css">
     <link rel="stylesheet" href="style.css">
 
-    <!-- bootstrap cdn -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-        <!-- CSS Files -->
 </head>
+
 <body>
-    <div class="wrapper">
-                <nav class="navbar">
-                    <div class="container">
-                            <h1 class="logo">{S => F}</h1>
-                            <ul class="nav">
-                                <li> <a href="#home">Samuel Fagbamigbe</a></li>
-                                <li> <a href="#"><img src="/dist/img/apple-icon.png" alt="apple icon">
-                                </a></li>
-                            </ul>
-                    </div>
-                </nav>
-      
-        <section class="section-a">
-            <div class="container">
-                <div> 
-                    <h1>Software Engineer | <a href="/dist/index2.html">Creator.</a></h1>
-                    <p>Turning Ideas into reality. <br> Lets collaborate on your next project.
-                    </p>
-                        <a href="#" class="btn">Contact</a>
-                    </div>
-                    <img src="/dist/img/sam.jpg" alt="">
-            </div>
-        </section>
-      
+        <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-yellow-700 mb-3 shadow">
 
-            <!-- OVerlay Text -->
-    <!-- <section class="section-b">
-            <div class="overlay">
-                <div class="section-b-inner">
-                    <h3>Loud & Clear</h3>
-                    <h2>People Arent hearing all the music</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dicta blanditiis minima corporis quisquam nisi saepe natus suscipit, odit distinctio!</p>
+                <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+
+                  <div class="w-full relative flex justify-between md:w-auto  px-4 md:static">
+
+                    <a class="text-2xl text-center w-full font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="#">
+                    Samuel Fagbamigbe<img src="/dist/img/apple-icon.png" alt="apple-icon">
+                    </a> 
+                    <!-- <a href="#"><img src="/img/apple-icon.png" alt="apple icon"></a> -->
+                  </div>
+
+                  <div class="md:flex flex-grow items-center mt-5 md:mt-0">
+                    <ul class="flex flex-col md:flex-row list-none ml-auto">
+
+                        <li class="nav-item flex-1 md:flex-none text-center">
+      
+                          <li class="nav-item flex-1 md:flex-none text-center">
+                                <a class="px-3 py-2 text-sm uppercase font-bold text-white hover:opacity-75" href="#skills">
+                                  Tech
+                                </a>
+                            </li> 
+                          <!-- </li> -->
+
+                        <li class="nav-item flex-1 md:flex-none text-center">
+                          <a class="px-3 py-2 text-sm uppercase font-bold text-white hover:opacity-75" href="#projects">
+                            Projects
+                          </a>
+                        </li>
+                        <li class="nav-item flex-1 md:flex-none text-center">
+                          <a class="px-3 py-2 text-sm uppercase font-bold text-white hover:opacity-75" href="#contact">
+                              Contact
+                            </a>
+                         </li>
+                      </ul>
                 </div>
+          </div>
+    </nav>
+
+    <section class="bg-gray-900">
+            <div class="flex flex-col md:flex-row">
+                    <div class="py-20 md:py-56 text-center flex-1">
+                          <h1 class="text-4xl text-white">Hi, I'm Samuel Fagbamigbe. 😁</h1>
+                          <p class="text-4xl text-yellow-700">
+                              Software Developer | Entrepreneur |
+                        <a href="/dist/oldPage.html">Creator.</a>
+                          </p> 
+                    </div>
+
+                    <div class="flex-1  order-last md:order-first">
+                           <img 
+                                    class="w-full h-full object-cover"
+                                    src="/dist/img/sam1.jpg" 
+                                    alt="watchman"
+                            />
+                    </div>
             </div>
-        </section> -->
+    </section> 
 
-        <div class="work">
-            <!-- <h2>Gallery</h2> -->
-            <div class="zone">
-                <a href="#"><img src="/dist/img/work001-04.jpg" alt="project image"></a>
-            </div>    
-               <div class="zone">
-                <a href="#"><img src="/dist/img/profile-page.png" alt="project image"></a>
-               </div> 
-               <div class="zone"> 
-                <a href="#"><img src="/dist/img/work02-hover.jpg" alt="project image"></a>
-               </div>
-               <div class="zone">
-                 <a href="#"><img src="/dist/img/work01-hover.jpg" alt="project image"></a>
-               </div>
-               <div class="zone">
-                <a href="#"><img src="/dist/img/rotating_card_thumb2.png" alt="project image"></a>
-               </div>
-               <div class="zone">
-                 <a href="#"><img src="/dist/img/rotating_card_thumb.png" alt="project image"></a>
-               </div>
+              <!-- Section for Skills-->
+
+    <section class="py-10" id="skills">
+            <div class="container text-center mx-auto">
+                  <h2 class="text-5xl font-bold">Technology I Use</h2>
+                  <ul class="flex flex-wrap w-full justify-between">
+                      <li class="p-3 text-5xl md:text-5xl text-red-500">
+                        <i class="fab fa-html5"></i></li>
+                      <li class="p-3 text-5xl md:text-5xl text-blue-700">
+                        <i class="fab fa-css3"></i></li>
+                      <li class="p-3 text-5xl md:text-5xl text-yellow-500">
+                        <i class="fab fa-js"></i></li>
+                      <li class="p-3 text-5xl md:text-5xl text-blue-300">
+                        <i class="fab fa-react"></i></li>
+                      <li class="p-3 text-5xl md:text-5xl text-green-700">
+                        <i class="fab fa-node"></i>
+                      </li>
+                  </ul>
+            </div>
+      </section>
+               
+              <!-- to have multi lines of div or ul>li use * -->
+                <!-- section for projects -->
+
+      <section class="py-10" id="projects">
+              <div class="container text-center mx-auto">
+                    <h2 class="text-4xl font-bold">Projects</h2>
+                    <!-- this centers the ul and displays flex -->
+                    <ul class="inline-flex mx-auto my-2 "> 
+                            <li class="mx-2">
+                                    <span 
+                                        data-tag ="all" 
+                                        class=" tag text-sm cursor-pointer font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-200 bg-yellow-700 uppercase last:mr-0 mr-1 hover:text-yellow-400 hover:bg-indigo-400">
+                                            All
+                                    </span>
+                    </li>
+                    <li class="mx-2">
+                            <span 
+                              data-tag ="css" 
+                              class=" tag text-sm cursor-pointer font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-200 bg-yellow-700 uppercase last:mr-0 mr-1 hover:text-yellow-400 hover:bg-indigo-400">
+                                CSS
+                        </span>
+                    </li> 
+                    <li class="mx-2">
+                        <span 
+                            data-tag ="react" 
+                            class=" tag text-sm cursor-pointer font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-200 bg-yellow-700 uppercase last:mr-0 mr-1 hover:text-yellow-400 hover:bg-indigo-400">
+                                React
+                        </span>
+                    </li>
+                    <li class="mx-2">
+                        <span 
+                            data-tag ="node" 
+                            class=" tag text-sm cursor-pointer font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-200 bg-yellow-700 uppercase last:mr-0 mr-1 hover:text-yellow-400 hover:bg-indigo-400">
+                                Node
+                        </span>
+                  </li>
+          </ul>
+
+                   <!-- grid for project section -->
+                        <div 
+                          class="flex flex-wrap mt-5"> 
+                  <!-- to make the with big and also add img: div.w-1/3*6>img[src=""] :p-padding, w-width, mt-margin-top.-->
+                        <div  
+                          class="project w-1/2 md:w-1/3 h-40 h-64 p-2" 
+                          data-tags="css,react">
+                          <a href="https://freshsite.netlify.com/">
+                          <img  
+                                  class="w-full h-full object-cover" 
+                                  src="/dist/img/phono1.png"
+                                  alt="project"
+                          /></a>
+                        </div>
+                        <div 
+                          class="project w-1/2 md:w-1/3 h-40 h-40 h-64 p-2" data-tags="node">
+                         <a href="#">
+                          <img 
+                                class="w-full h-full object-cover" 
+                                src="/dist/img/Coronadoc.png" 
+                                alt="project"
+                          /></a>
+                        </div>
+                        <div 
+                          class=" project w-1/2 md:w-1/3 h-40 h-64 p-2" data-tags="css">
+                          <a href="https://3cardmonte.netlify.com/">
+                          <img 
+                                class="w-full h-full object-cover" 
+                                src="/dist/images/3cardMonte.png" 
+                                alt="project"
+                          /></a>
+                        </div>
+                        <div        
+                              class=" project w-1/2 md:w-1/3 h-40 h-64 p-2" data-tags="css,react,node">
+                              <a href="#">
+                                    <img 
+                                    class="w-full h-full object-cover" 
+                                    src="/dist/images/Keychain-4.png"
+                                    src="/dist/images/ladyBird-1.png" 
+                                    alt="project"
+                              /></a>
+                        
+                        </div>
+                        <div 
+                          class=" project w-1/2 md:w-1/3 h-40 h-64 p-2" data-tags="react,node">
+                          <a href="#">
+                                    <img 
+                                    class="w-full h-full object-cover" 
+                                    src="/dist/images/FowAi-2.png" 
+                                    alt="project"
+                              /></a>   
+                        </div>
+                        <div 
+                          class=" project w-1/2 md:w-1/3 h-40 h-64 p-2" data-tags="css,node">
+                          <a href="https://ladybird-app.herokuapp.com/">
+                                    <img 
+                                    class="w-full h-full object-cover" 
+                                    src="/dist/images/ladyBird-1.png" 
+                                    alt="project"
+                              /></a>           
+                        </div>
+                  </div>
+      </div>
+                  <!-- photo grid for each project above -->
+                  <!-- adding more projects below -->
+      <div 
+                          class="flex flex-wrap mt-5"> 
+                      <!-- to make the with big and also add img: div.w-1/3*6>img[src=""] :p-padding, w-width, mt-margin-top.-->
+      <div 
+                          class=" project w-1/2 md:w-1/3 h-40 h-64 p-2" data-tags="css,react">
+                          <img 
+                                class="w-full h-full object-cover"                                     
+                                src="/dist/img/watchman.jpg" 
+                                alt="project">
+                        </div>
+                        <div 
+                          class=" project w-1/2 md:w-1/3 h-40 h-64 p-2" data-tags="node">
+                          <a href="https://3card-monte.netlify.com/">
+                          <img 
+                                class="w-full h-full object-cover" 
+                                src="/dist/images/Montegame.png" 
+                                alt="project" /></a>
+                        </div>
+                        <div 
+                          class=" project w-1/2 md:w-1/3 h-40 h-64 p-2" data-tags="css">
+                          <img 
+                                class="w-full h-full object-cover" 
+                                src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" 
+                                alt="project">
+      </div>
+      <div 
+                          class=" project w-1/2 md:w-1/3 h-40 h-64 p-2" data-tags="css,react,node">
+                          <img 
+                                class="w-full h-full object-cover" 
+                                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" 
+                                alt="project">
         </div>
-
-        <div class="whatIDo">
-            <h1>Everthing <br>You need</h1>
-            <h2 class="iAm">I AM</h2>
-            <ul>
-                <li>Software Development</li>
-                <li>Tech Adcovate</li>
-                <li>Visual Designer</li>
-                <li>Creator</li>
-                <li>Prototyping</li>
-            </ul>
+        <div 
+                          class=" project w-1/2 md:w-1/3 h-40 h-64 p-2" data-tags="react,node">
+                          <img 
+                                class="w-full h-full object-cover" 
+                                src="https://images.unsplash.com/photo-1537731121640-bc1c4aba9b80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" 
+                                alt="project">
         </div>
+        <div 
+                          class=" project w-1/2 md:w-1/3 h-40 h-64 p-2" data-tags="css,node">
+                          <img 
+                                class="w-full h-full object-cover" 
+                                src="https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1074&q=80" 
+                                alt="project">
+                      </div>
+              </div>
+          </div>
+                  <!-- new projects added, code above -->
+    </section>
+                    <!-- creating WhatiDo section. duplicate sectionc code. -->
 
-        <div class="work2">
-            <a href="#"><img src="/dist/img/work001-03.jpg" alt="project image"></a>
-            <a href="#"><img src="/dist/img/smoke.jpg" alt="project image"></a> 
-        </div>
+                  <div class="whatIDo">
+                  <h1>Everthing <br>You need</h1>
+                  <h2 class="iAm">I AM</h2>
+                  <ul>
+                              <li>Software Development</li>
+                              <li>Tech Adcovate</li>
+                              <li>Visual Designer</li>
+                              <li>Creator</li>
+                              <li>Prototyping</li>
+                  </ul>
+                  <img src="/dist/images/Cloud.jpg" alt="">
+                  </div>
 
-        <footer>
-            <p>@ Samuel Fagbamigbe 2020</p>
-        </footer>
+              <!-- creating contact section. duplicate sectionc code. -->
 
-    </div>
-    <!-- <script src="script.js"></script> -->
-</body>
+    <section class="py-10" id="contact">
+             <div class="container text-center mx-auto">
+                    <h2 class="text-4xl font-bold">Contact</h2>
+
+                    <!-- input section for contact -->
+
+    <div 
+          class="w-full md:w-2/3 mx-auto bg-yellow-500 p-4 rounded shadow-md text-left">
+                      <div class="flex flex-wrap">
+                          <div class="mb-3 sm:mr-2 pt-0 flex-auto sm:flex-1">
+                            <label class="text-lg inline-block mb-2 text-white ">Name:</label>
+                              <input
+                                    type="text" 
+                                    placeholder="Name" 
+                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-md shadow outline-none focus:outline-none focus:shadow-outline w-full"/>
+                            </div>
+
+                            <div class="mb-3 sm:ml-2 pt-0 flex-auto sm:flex-1">
+                              <label class="text-lg inline-block mb-2 text-white ">Email:</label>
+                                <input
+                                      type="email" 
+                                      placeholder="Email" 
+                                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-md shadow outline-none focus:outline-none focus:shadow-outline w-full"/>
+                              </div>
+                           </div>
+                      
+                        <div class="mb-3 pt-0">
+                              <label class="text-lg inline-block mb-2 text-white ">Message:</label>
+                                <textarea
+                                      placeholder="Message" 
+                                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-md shadow outline-none focus:outline-none focus:shadow-outline w-full"
+                                ></textarea>
+                        </div>
+                        <button
+                             class="block w-full bg-purple-700 text-white active:bg-purple-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mb-1"
+                             type="button"
+                             style="transition: all .15s ease"
+                             method="POST"
+                             data-netlify="true"
+                           >
+                             Send Email
+                             <i class="ml-2 fas fa-paper-plane"></i>
+                       </button>
+                </div>
+          </div>
+  </section>
+
+  <!-- footer section modidied code -->
+  <footer class="bg-yellow-700 text-center py-5">
+			<div
+				class="container flex flex-wrap items-center justify-between mx-auto px-5"
+			>
+				<p class="text-xl text-white w-full md:w-auto mb-4 md:mb-0">
+					Built with
+					<i class="fas fa-heart text-red-500"></i>
+					by
+					<span class="font-bold">Samuel Fagbamigbe</span>
+				</p>
+				<ul class="flex text-white text-xl mx-auto md:mr-0">
+					<li>
+						<a
+							class="w-10 h-10 flex mx-2 items-center justify-center border border-white rounded-full"
+							href="#"
+						>
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a
+							class="w-10 h-10 flex mx-2 items-center justify-center border border-white rounded-full"
+							href="#"
+						>
+							<i class="fab fa-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a
+							class="w-10 h-10 flex mx-2 items-center justify-center border border-white rounded-full"
+							href="#"
+						>
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a
+							class="w-10 h-10 flex mx-2 items-center justify-center border border-white rounded-full"
+							href="#"
+						>
+							<i class="fab fa-youtube"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		      </footer>
+
+           <script src="/dist/script.js"></script>
+      </body>
 </html>
