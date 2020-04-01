@@ -44,6 +44,7 @@
     "@babel/core": "^7.7.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
+    "@octokit/rest": "^17.1.4",
     "autoprefixer": "^9.7.2",
     "babel-eslint": "^10.0.3",
     "babel-plugin-istanbul": "^5.2.0",
@@ -55,7 +56,7 @@
     "find-unused-sass-variables": "^0.6.0",
     "glob": "^7.1.6",
     "hammer-simulator": "0.0.1",
-    "http-server": "^0.11.1",
+    "http-server": "^0.12.1",
     "ip": "^1.1.5",
     "jquery": "^3.4.1",
     "karma": "^3.1.4",
@@ -82,9 +83,7 @@
     "stylelint": "^9.10.1",
     "stylelint-config-twbs-bootstrap": "^0.5.0",
     "uglify-js": "^3.6.9",
-    "vnu-jar": "19.9.4",
-    "@octokit/rest": "^17.1.4" 
-
+    "vnu-jar": "19.9.4"
   },
   "engines": {
     "node": ">=6"
@@ -101,7 +100,7 @@
   "homepage": "https://getbootstrap.com/",
   "jspm": {
     "registry": "npm",
-    "main": "js/bootstrap",
+    "main": "dist",
     "directories": {
       "lib": "dist"
     },
@@ -138,7 +137,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/twbs/bootstrap.git"
+    "url": "https://github.com/Future-whitehat7/Sam-Portfolio-1.git"
   },
   "sass": "scss/bootstrap.scss",
   "scripts": {

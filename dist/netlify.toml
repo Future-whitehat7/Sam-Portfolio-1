@@ -1,8 +1,8 @@
 [build]
     command = "yarn build"
-    publish = "dist"
+    publish = "/dist"
 
-# [[redirects]]
-# fr
-# to = "/index2.html"
-# status = 200
+[[redirects]]
+from = "/"
+to = "/index2.html"
+status = 200
