@@ -2,3 +2,35 @@
 html {
     scroll-behavior: smooth; 
 }
+
+/* img hover */
+img:hover {
+    cursor:pointer;
+    transition: all 0.3s linear;
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+
+/* whatIDo  */
+.whatIDO {
+    text-align: center;
+    margin: 100px 0 200px 0;
+    position: relative;
+    /* background-image: url('/dist/images/Cloud.jpg') */
+}
+.whatIDO h1 {
+    color: #13A3FD;
+}
+.iAm {
+    color: #25272C;
+    font-size: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    top: -20px;
+    z-index: -1;
+}
