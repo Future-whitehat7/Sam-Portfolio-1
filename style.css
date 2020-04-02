@@ -2,6 +2,16 @@
 html {
     scroll-behavior: smooth; 
 }
+/* 
+img.profile-pic {
+    border: 5px solid lightblue;
+	border-radius: 100%;
+	margin: 1em auto;
+	width: 80%;
+	display: block;
+
+} */
+
 
 /* img hover */
 img:hover {
@@ -22,10 +32,10 @@ img:hover {
     /* background-image: url('/dist/images/Cloud.jpg') */
 }
 .whatIDO h1 {
-    color: #13A3FD;
+    color: #b7791f;
 }
 .iAm {
-    color: #25272C;
+    color: #bee3f8;	
     font-size: 150px;
     position: absolute;
     left: 50%;
